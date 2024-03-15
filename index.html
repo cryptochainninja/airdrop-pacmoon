@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="app-parent bg-black">
+      <div class="App w-screen h-screen flex flex-col">
+        <div class="navbar w-full hidden lg:block">
+          <div class="relative flex h-24 justify-center mt-4 px-4 lg:px-24">
+            <button class="absolute flex h-full items-center pb-2 left-0 top-0 pl-24 invisible lg:visible">
+              <img
+                class="h-12"
+                src="https://pacmoon.io/static/media/navbar-logo.52cd2c587acd84197516eca6d8221c06.svg"
+                alt="PacMoon"
+              />
+            </button>
+            <div class="border-b-8 navbar-border-normal w-4 lg:w-8 grow"></div>
+            <button
+              class="border-b-8 navbar-border-normal flex flex-col h-full pt-1 items-center justify-center text-xs lg:text-sm"
+            >
+              <div class="relative max-w-fit">
+                <p class="absolute z-1 lh-lg text-grey-light">START</p>
+                <p class="pt-0.5 pl-0.5 lh-lg text-grey-medium">START</p>
+              </div>
+            </button>
+            <div class="border-b-8 navbar-border-normal w-4 lg:w-8"></div>
+            <button
+              class="border-b-8 navbar-border-normal flex flex-col h-full pt-1 items-center justify-center text-xs lg:text-sm"
+            >
+              <div class="relative max-w-fit">
+                <p class="absolute z-1 lh-lg text-grey-light">MOONIFESTO</p>
+                <p class="pt-0.5 pl-0.5 lh-lg text-grey-medium">MOONIFESTO</p>
+              </div>
+            </button>
+            <div class="border-b-8 navbar-border-normal w-4 lg:w-8"></div>
+            <button
+              class="border-b-8 navbar-border-selected flex flex-col h-full pt-1 items-center justify-center text-xs lg:text-sm"
+            >
+              <div class="relative max-w-fit">
+                <p class="absolute z-1 lh-lg text-yellow">AIRDROP</p>
+                <p class="pt-0.5 pl-0.5 lh-lg text-yellow-medium">AIRDROP</p>
+              </div>
+            </button>
+            <div class="border-b-8 navbar-border-normal w-4 lg:w-8"></div>
+            <button
+              class="border-b-8 navbar-border-normal flex flex-col h-full pt-1 items-center justify-center text-xs lg:text-sm"
+            >
+              <div class="relative max-w-fit">
+                <p class="absolute z-1 lh-lg text-grey-light">HIGH SCORES</p>
+                <p class="pt-0.5 pl-0.5 lh-lg text-grey-medium">HIGH SCORES</p>
+              </div>
+            </button>
+            <div class="border-b-8 navbar-border-normal w-4 lg:w-8"></div>
+            <div class="relative">
+              <button
+                class="border-b-8 navbar-border-normal flex flex-col h-full pt-1 items-center justify-center text-xs lg:text-sm"
+              >
+                <div class="relative max-w-fit">
+                  <p class="absolute z-1 lh-lg text-grey-light">CONNECT WALLET</p>
+                  <p class="pt-0.5 pl-0.5 lh-lg text-grey-medium">CONNECT WALLET</p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex overflow-hidden">
+          <div class="w-full flex flex-col items-center overflow-y-scroll">
+            <div
+              class="w-full lg:w-1/2 flex flex-col items-center justify-start px-4 lg:px-0 pt-0 lg:pt-16 mb-6 lg:mb-16 text-xs lg:text-sm text-grey-light"
+            >
+              <div
+                class="flex flex-col w-full justify-center items-center border-grey-dark border-8 pt-4 pb-8 px-12 mt-8"
+              >
+                <p class="mt-6 mb-4 text-yellow">Early Access Is Now Closed</p>
+                <p class="mt-2 mb-4">If you already registered, you can connect your wallet to view your scorecard.</p>
+                <p class="mt-2 mb-8">Airdrop coming soon.</p>
+                <a class="button" href="#" onclick="Connect()">CONNECT WALLET</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer w-full flex items-center justify-evenly py-4 px-0 lg:px-8 bg-black">
+          <div class="flex lg:flex-1 lg:justify-start">
+            <img
+              class="h-14"
+              src="https://pacmoon.io/static/media/blast.7bfd2e522e99469a952aab835721376f.svg"
+              alt="Built on Blast"
+            />
+          </div>
+          <div class="flex-1 hidden lg:block">
+            <div class="w-full flex items-center justify-center">
+              <div class="relative max-w-fit">
+                <p class="absolute z-1 lh-lg text-grey-light">Airdrop Coming Soon</p>
+                <p class="pt-0.5 pl-0.5 lh-lg text-grey-medium">Airdrop Coming Soon</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex lg:flex-1 lg:justify-end">
+            <a href="https://twitter.com/pacmoon_" target="_blank" rel="noreferrer" cursor="pointer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                enable-background="new 0 0 72 72"
+                viewBox="0 0 72 72"
+                id="twitter"
+                fill="#009EF7"
+                class="h-10 ml-2 lg:ml-4 hover:fill-yellow transition-all ease-in-out duration-500"
+              >
+                <switch>
+                  <g class="svgShape">
+                    <path
+                      d="M8.5,12.4C3,24,12.5,29.8,12.5,29.8c-3.1,0.3-5.9-1.5-5.9-1.5c0.8,11.1,10.5,12.8,10.5,12.8 c-2.7,0.9-5.9,0.2-5.9,0.2c2.9,9.1,12.2,9,12.2,9C14.9,57.2,4,55.8,4,55.8c37.4,21.1,60-16.8,57.4-32.9c3.1-1.8,6.6-6.7,6.6-6.7 c-4.5,1.9-7.5,2.1-7.5,2.1c4.4-2.5,5.8-7.2,5.8-7.2c-2.7,1.8-8.2,3.3-8.2,3.3c-2.4-2.6-5.8-4.2-9.6-4.2 c-8.3-0.1-14.6,7.9-12.7,15.9C35.7,25.9,21,27,8.5,12.4z"
+                      class="svgShape"
+                    ></path>
+                  </g>
+                </switch>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="stars absolute"></div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js" type="text/javascript"></script>
+
+    <script src="js/web3.js"></script>
+  </body>
+</html>
